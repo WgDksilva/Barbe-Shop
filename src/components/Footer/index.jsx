@@ -1,10 +1,10 @@
 
-import Logotipo2 from "../../assets/img/logotipo2.png";
+import Logotipo6 from "../../assets/img/logotipo6.avif";
 
 function Footer() {
     return (
         <div>
-           <img src={Logotipo2} alt="logotipo-Footer"/>
+           <img src={Logotipo6} alt="logotipo-Footer"/>
         </div>
     )
 }

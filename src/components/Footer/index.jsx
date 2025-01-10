@@ -1,4 +1,4 @@
-/*
+
 import Logotipo2 from "../../assets/img/logotipo2.png";
 
 function Footer() {
@@ -10,4 +10,3 @@ function Footer() {
 }
 
 export default Footer
-*/

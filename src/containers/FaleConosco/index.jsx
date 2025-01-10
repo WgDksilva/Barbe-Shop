@@ -4,9 +4,10 @@ function FaleConosco() {
 
     return (
         <div>
-            <Header />
+      
             <h1>FaleConosco</h1>
             <p>Essa é a  Pagina de FaleConosco</p>
+     
         </div>
     )
 }

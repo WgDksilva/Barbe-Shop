@@ -1,8 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import  CreateGlobalStyles from  "./styles/globalStyles"
-
+import GlobalStyles from  "./styles/globalStyles";
 import Router from "./routes/routes.jsx";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -10,7 +9,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <Router />
     </BrowserRouter>
-    <CreateGlobalStyles />
+    <GlobalStyles />
   </React.StrictMode>
 )
 

@@ -1,14 +1,32 @@
 import Header from "../../components/Header";
+import Logotio2 from "../../assets/img/logotipo2.png"
+import { Background, Info } from './styles';
 
 function Home() {
 
     return (
-        <div>
-    
-            <h1>Home</h1>
-            <p>Essa é a  Pagina de Home</p>
-         
-        </div>
+
+        <Background img="https://construindodecor.com.br/wp-content/uploads/2020/11/Decoracao-De-Barbearia-Industrial-2.jpg">
+
+            <Info>
+                <img src={Logotio2} alt="logotipo2-header" />
+                <h1>
+                    ESTILO É UM REFLEXO DA SUA ATITUDE E SUA PERSONALIDADE.
+                </h1>
+                <p>
+                    Acreditamos que cada corte de cabelo é uma obra de arte.
+                    Nossa equipe de barbeiros profissionais está pronta para proporcionar a você uma experiência única e
+                    personalizada, combinando técnicas tradicionais com as últimas tendências.
+                </p>
+                <p>
+                    Horário de Funcionamento:
+                    <strong>09:00</strong> ás <strong>19:00</strong>
+                </p>
+                <div>
+                    <a href="#" class="navigation_link" target="_blank">Agendar horário</a>
+                </div>
+            </Info>
+        </Background>
     )
 }
 

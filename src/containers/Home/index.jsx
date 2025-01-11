@@ -1,6 +1,8 @@
 import Header from "../../components/Header";
 import Logotio2 from "../../assets/img/logotipo2.png"
-import { Background, Info } from './styles';
+
+import { Background, Container, ContainerButtons, Info, Poster } from './styles';
+import Button from "../../components/Button";
 
 function Home() {
 
@@ -8,26 +10,36 @@ function Home() {
 
         <Background img="https://construindodecor.com.br/wp-content/uploads/2020/11/Decoracao-De-Barbearia-Industrial-2.jpg">
 
-            <Info>
-                <img src={Logotio2} alt="logotipo2-header" />
-                <h1>
-                    ESTILO É UM REFLEXO DA SUA ATITUDE E SUA PERSONALIDADE.
-                </h1>
-                <p>
-                    Acreditamos que cada corte de cabelo é uma obra de arte.
-                    Nossa equipe de barbeiros profissionais está pronta para proporcionar a você uma experiência única e
-                    personalizada, combinando técnicas tradicionais com as últimas tendências.
-                </p>
-                <p>
-                    Horário de Funcionamento:
-                    <strong>09:00</strong> ás <strong>19:00</strong>
-                </p>
-                <div>
-                    <a href="#" class="navigation_link" target="_blank">Agendar horário</a>
-                </div>
-            </Info>
+            <Container>
+                <Info>
+                    <img src={Logotio2} alt="logotipo2-header" />
+
+                    <h1>ESTILO É UM REFLEXO DA SUA ATITUDE E SUA PERSONALIDADE.</h1>
+
+                    <p>
+                        Acreditamos que cada corte de cabelo é uma obra de arte.<br />
+                        Nossa equipe de barbeiros profissionais está pronta para proporcionar a você uma experiência única e
+                        personalizada, combinando técnicas tradicionais com as últimas tendências.
+                    </p>
+
+                    <p class="horario"> Horário de Funcionamento: <strong>09:00</strong> ás <strong>19:00</strong></p>
+
+                    <ContainerButtons>
+                        <Button red={true}>Fale Conosco</Button>
+                        <Button red={false}>Agendar horário</Button>
+                    </ContainerButtons>
+
+                </Info>
+
+                <Poster>
+                    <img src="https://www.mycoupe.fr/wp-content/uploads/2020/01/debarraser-poils-oreilles-homme-sciseaux-810x477.jpg" alt="barbeiro" />
+                </Poster>
+
+            </Container>
         </Background>
     )
 }
 
 export default Home
+
+//  <a href="#" class="navigation_link" target="_blank">Agendar horário</a>

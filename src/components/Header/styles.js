@@ -1,7 +1,7 @@
-
 import styled from "styled-components";
 
 export const Container = styled.div`
+    min-height: 100px;
     z-index: 99;
     position: fixed;
     top: 0;
@@ -10,10 +10,14 @@ export const Container = styled.div`
     align-items: center;
     gap: 40px;
 
+    background-color: ${ (props) =>
+        props.changeBackground ? '#000' : 'transparent'};
+    transition: background-color 0.6s ease-in-out;
+
     img {
         width: 80px;
         border-radius: 100%;
-    }
+    };
 `;
 
 export const Menu = styled.ul`
@@ -23,8 +27,10 @@ export const Menu = styled.ul`
 `;
 
 export const Li = styled.li`
+    font-weight: 600;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 15px;
+    position: relative;
     
     a {
         text-decoration: none;
@@ -36,10 +42,27 @@ export const Li = styled.li`
         box-shadow: 0px 0px 7px 8px rgb(255 0 0 / 30%);
         letter-spacing: 1px;
         transition: background-color 0.8s;
-    }
+    };
+
     a:hover {
         color: #ffffff;
         background: #ff0000;
         box-shadow: 0px 0px 7px 15px rgb(255 0 0 / 30%);
-    }
+    };
+
+    &::after {
+        content: '';
+        height: 2px;
+        width: ${props => (props.isActive ? '100%' : 0)};
+        background-color: #ffffff;
+        position: absolute;
+        bottom: -20px;
+        transition: width 0.5s ease-in-out;
+        left: 50%;
+        transform: translateX(-50%);
+    };
+    
+    &:hover::after {
+        width: 100%;
+    };
 `;

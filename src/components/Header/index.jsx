@@ -1,7 +1,8 @@
+import Logotio1 from "../../assets/img/logotipo1.jpg";
 
 import { Link } from "react-router-dom";
 import { Container, Menu, Li } from "./styles";
-import Logotio1 from "../../assets/img/logotipo1.jpg"
+
 
 function Header() {
     return (

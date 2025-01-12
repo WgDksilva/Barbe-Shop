@@ -1,3 +1,6 @@
+import Linkedin from "../../assets/img/linkedin.jpeg";
+import Github from "../../assets/img/github.jpg";
+import Whatsapp from "../../assets/img/whatsapp.png";
 
 import { Link } from "react-router-dom";
 import { Container, Menu, Li } from "./styles";
@@ -6,16 +9,21 @@ function Footer() {
     return (
         <Container>
             <Menu>
+                <p>Desenvolvido por &copy; Vagner Silva</p>
                 <Li>
-                    <Link>Home</Link>
+                    <a href="https://www.linkedin.com/in/wgdksilva/">
+                        <img src={Linkedin} alt="Linkedin" /></a>
                 </Li>
 
                 <Li>
-                    <Link>Serviços</Link>
+                    <a href="https://github.com/WgDksilva/">
+                        <img src={Github} alt="Github" /></a>
                 </Li>
 
                 <Li>
-                    <Link>Produtos</Link>
+                    <a
+                        href="https://api.whatsapp.com/send?phone=5511923423423&text=Ol%C3%A1,%20quero%20a%20ajuda%20dos%20irm%C3%A3os%20Mario!">
+                        <img src={Whatsapp} alt="Whatsapp" /></a>
                 </Li>
             </Menu>
         </Container>
@@ -24,6 +32,3 @@ function Footer() {
 
 export default Footer
 
-// import Logotipo6 from "../../assets/img/logotipo6.avif";
-
-//  <img src={Logotipo6} alt="logotipo-Footer"/>

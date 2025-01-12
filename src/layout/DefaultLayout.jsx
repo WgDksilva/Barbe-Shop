@@ -15,6 +15,3 @@ function DefaultLayout() {
 }
 
 export default DefaultLayout
-
-
-//  <div>Footer</div> Descobrir porque esta dando erro no Footer ? 

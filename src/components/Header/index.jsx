@@ -9,15 +9,15 @@ function Header() {
         <Container>
             <Menu>
                 <Li>
-                    <Link to="/">Home</Link>
+                    <Link class="navigation-link" to="/">Home</Link>
                 </Li>
 
                 <Li>
-                    <Link to="/servicos">Serviços</Link>
+                    <Link class="navigation-link" to="/servicos">Serviços</Link>
                 </Li>
 
                 <Li>
-                    <Link to="/produtos">Produtos</Link>
+                    <Link class="navigation-link" to="/produtos">Produtos</Link>
                 </Li>
             </Menu>
 

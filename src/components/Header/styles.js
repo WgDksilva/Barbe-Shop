@@ -29,5 +29,17 @@ export const Li = styled.li`
     a {
         text-decoration: none;
         color: #ffffff;
+        background:  #ff0000;
+        padding: 8px 24px;
+        border: 4px solid transparent;
+        border-radius: 20px;
+        box-shadow: 0px 0px 7px 8px rgb(255 0 0 / 30%);
+        letter-spacing: 1px;
+        transition: background-color 0.8s;
+    }
+    a:hover {
+        color: #ffffff;
+        background: #ff0000;
+        box-shadow: 0px 0px 7px 15px rgb(255 0 0 / 30%);
     }
 `;

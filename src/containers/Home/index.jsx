@@ -1,7 +1,8 @@
 import Header from "../../components/Header";
 import Logotio2 from "../../assets/img/logotipo2.png";
 
-import { Background, Container, Info, Poster } from './styles';
+import { Background, Button, Container, Info, Poster } from './styles';
+
 
 function Home() {
 
@@ -20,6 +21,9 @@ function Home() {
                         personalizada, combinando técnicas tradicionais com as últimas tendências.
                     </p>
                     <p class="horario"> Horário de Funcionamento: <strong>09:00</strong> ás <strong>19:00</strong></p>
+                    <Button>
+                        <a href="https://api.whatsapp.com/send?phone=5511923423423&text=Ol%C3%A1,%20quero%20a%20ajuda%20dos%20irm%C3%A3os%20Mario!">Agendar Horário</a>
+                    </Button>
                 </Info>
 
                 <Poster>

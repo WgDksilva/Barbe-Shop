@@ -9,7 +9,6 @@ export const Background = styled.div`
     align-items: center;
     justify-content: center;
 
-
     &::before {
     content: '';
     position: absolute;
@@ -44,8 +43,7 @@ export const Info = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
-    margin-right: auto;
+    padding: 10px;
     margin-top: auto;
 
     min-height: 80vh;
@@ -59,7 +57,6 @@ export const Info = styled.div`
         font-size: 25px;
         color: #ffffff;
         letter-spacing: 1px;
-        margin: 0 2px;
         opacity: 0.8;
 
         /*
@@ -71,10 +68,9 @@ export const Info = styled.div`
     };
 
     p {
-        font-size: 25px;
+        font-size: 23px;
         font-weight: 500;
         color: #ffffff;
-        margin-top: 10px;
         opacity: 0.5;
 
         /*
@@ -87,19 +83,13 @@ export const Info = styled.div`
     };
 
     .horario {
-        color: red;
+        font-size: 23px;
+        font-weight: 500;
+        color: #ff0000;
         opacity: 0.9;
+        margin-bottom: 70px;
     };
 
-    a {
-        padding: 14px 28px;
-        color: #ffffff;
-        border-radius: 30px;
-        font-size: 18px;
-        margin-left: 170px;
-        
-    };
-    
     /*
     @media (max-width: 430px) {
         width: 98%;
@@ -131,14 +121,8 @@ export const Poster = styled.div`
         padding: 80px;
         z-index: 99;
         */
-      
     };
-
 `;
 
-export const ContainerButtons = styled.div`
-    display: flex;
-    gap: 20px;
-    margin-top: 10px;
-`;
+
 

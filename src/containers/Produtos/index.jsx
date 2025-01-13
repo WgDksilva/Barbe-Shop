@@ -1,14 +1,16 @@
 import Header from "../../components/Header";
 
+import { Background, Container } from "./styles";
+
 function Produtos() {
 
     return (
-        <div>
-  
-            <h1>Produtos</h1>
-            <p>Essa é a  Pagina de Produtos</p>
-     
-        </div>
+        <Background>
+            <Container>
+                <h1>Produtos</h1>
+                <p>Essa é a  Pagina de Produtos</p>
+            </Container>
+        </Background>
     )
 }
 

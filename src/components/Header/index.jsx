@@ -1,4 +1,4 @@
-import Logotio1 from "../../assets/img/logotipo1.jpg";
+import Logotio6 from "../../assets/img/logotipo6.avif";
 
 import { Link, useLocation } from "react-router-dom";
 import { Container, Menu, Li } from "./styles";
@@ -33,7 +33,7 @@ function Header() {
                     <Link class="navigation-link" to="/produtos">Produtos</Link>
                 </Li>
             </Menu>
-            <img src={Logotio1} alt="logotipo1-header" />
+            <img src={Logotio6} alt="Logotio6-header" />
         </Container>
     )
 };

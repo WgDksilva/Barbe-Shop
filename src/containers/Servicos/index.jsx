@@ -1,14 +1,16 @@
 import Header from "../../components/Header";
 
+import { Background, Container } from "./styles";
+
 function Servicos() {
 
     return (
-        <div>
-        
-            <h1>Servicos</h1>
-            <p>Essa é a Pagina de Servicos</p>
-           
-        </div>
+        <Background>
+            <Container>
+                <h1>Serviços</h1>
+                <p>Essa é a  Pagina de Serviços</p>
+            </Container>
+        </Background>
     )
 }
 

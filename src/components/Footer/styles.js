@@ -5,16 +5,10 @@ export const Container = styled.div`
     position: fixed;
     bottom: 10px;
     right: 10px;
-`;
 
-export const Menu = styled.ul`
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    list-style: none;
-    
     p {
         color: #ffffff;
+        margin-bottom: 10px;
         opacity: 0.3;
         transition: all 0.4s;
     };
@@ -23,6 +17,19 @@ export const Menu = styled.ul`
         transform: translateY(-10px);
         cursor: pointer;
     };
+
+
+    @media screen and (max-width:770px){
+        right: 80px;
+    };
+`;
+
+export const Menu = styled.ul`
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    padding-left: 20px;
 `;
 
 export const Li = styled.li`

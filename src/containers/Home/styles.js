@@ -26,6 +26,16 @@ export const Background = styled.div`
     width: 100%;
     height: 500px;
     background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0.21));
+    }; 
+
+    @media screen and (max-width:770px){
+        
+      
+
+        &::after{
+            width: 100%;
+            height: 100%;
+        };
     };
 `;
 
@@ -34,7 +44,6 @@ export const Container = styled.div`
     justify-content: space-around;
     align-items: center;
     height: 100%;
-    max-width: 1500px;
 `;
 
 export const Info = styled.div`
@@ -46,9 +55,6 @@ export const Info = styled.div`
     padding: 10px;
     margin-top: auto;
 
-    min-height: 80vh;
-    max-width: 800px;
-
     img {
         width: 250px;
     };
@@ -57,29 +63,14 @@ export const Info = styled.div`
         font-size: 25px;
         color: #ffffff;
         letter-spacing: 1px;
-        opacity: 0.8;
-
-        /*
-        @media (max-width: 430px) {
-            font-size: 3rem;
-            text-align: center;
-        }
-        */    
+        opacity: 0.8; 
     };
 
     p {
         font-size: 23px;
         font-weight: 500;
         color: #ffffff;
-        opacity: 0.5;
-
-        /*
-        @media (max-width: 430px) {
-            width: 100%;
-            font-size: 14px;
-            text-align: justify;
-        }
-        */    
+        opacity: 0.5;  
     };
 
     .horario {
@@ -90,13 +81,25 @@ export const Info = styled.div`
         margin-bottom: 70px;
     };
 
-    /*
-    @media (max-width: 430px) {
-        width: 98%;
-        font-size: 10px;
-        padding: 15px;
+    @media screen and (max-width:770px){
+        margin: 0;
+        padding: 5px;
+        position: relative;
+        /*top: 40px;*/
+       
+        img{
+           width: 160px;
+        };
+
+        .horario, h1, p {
+            opacity: 0.7;
+            margin: 0;
+            text-align: center;
+            font-size: 20px;
+            position: relative;
+            top: 50px; 
+        };
     };
-    */
 `;
 
 export const Button = styled.div`
@@ -122,6 +125,8 @@ export const Button = styled.div`
             color: #ffffff;
         };
     };
+
+   
 `;
 
 export const Poster = styled.div`
@@ -133,19 +138,17 @@ export const Poster = styled.div`
     padding: 20px;
     margin-right: auto;
   
-    min-height: 80vh;
-    max-width: 800px;
-
     img {
         width: 300px;
         border-radius: 100%;
         margin-left: 300px;
         margin-bottom: 200px;
-        
-        /*
-        padding: 80px;
-        z-index: 99;
-        */
+    };
+
+    @media screen and (max-width:770px){
+        width: 0;
+        padding: 0;
+        display: none; 
     };
 `;
 

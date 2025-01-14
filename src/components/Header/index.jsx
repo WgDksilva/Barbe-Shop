@@ -21,16 +21,16 @@ function Header() {
     return (
         <Container changeBackground={changeBackground}>
             <Menu>
-                <Li isActive={pathname === '/'}>
-                    <Link class="navigation-link" to="/">Home</Link>
+                <Li isactive={pathname === '/'}>
+                    <Link className="navigation-link" to="/">Home</Link>
                 </Li>
 
-                <Li isActive={pathname.includes('servicos')}>
-                    <Link class="navigation-link" to="/servicos">Serviços</Link>
+                <Li isactive={pathname.includes('servicos')}>
+                    <Link className="navigation-link" to="/servicos">Serviços</Link>
                 </Li>
 
-                <Li isActive={pathname.includes('produtos')}>
-                    <Link class="navigation-link" to="/produtos">Produtos</Link>
+                <Li isactive={pathname.includes('produtos')}>
+                    <Link className="navigation-link" to="/produtos">Produtos</Link>
                 </Li>
             </Menu>
             <img src={Logotio6} alt="Logotio6-header" />

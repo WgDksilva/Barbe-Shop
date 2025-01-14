@@ -15,12 +15,12 @@ function Home() {
 
                     <h1>ESTILO É UM REFLEXO DA SUA ATITUDE E SUA PERSONALIDADE.</h1>
 
-                    <p>
+                    <p >
                         Acreditamos que cada corte de cabelo é uma obra de arte.<br />
                         Nossa equipe de barbeiros profissionais está pronta para proporcionar a você uma experiência única e
                         personalizada, combinando técnicas tradicionais com as últimas tendências.
                     </p>
-                    <p class="horario"> Horário de Funcionamento: <strong>09:00</strong> ás <strong>19:00</strong></p>
+                    <p className="horario"> Horário de Funcionamento: <strong>09:00</strong> ás <strong>19:00</strong></p>
                     <Button>
                         <a href="https://api.whatsapp.com/send?phone=5511923423423&text=Ol%C3%A1,%20quero%20a%20ajuda%20dos%20irm%C3%A3os%20Mario!">Agendar Horário</a>
                     </Button>

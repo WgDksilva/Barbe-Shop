@@ -13,4 +13,8 @@ export default createGlobalStyle`
     body {
         background: #000000;
     }
+
+    @media screen and (max-width:770px){
+        
+    }
 `;

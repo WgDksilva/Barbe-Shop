@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    min-height: 100px;
     z-index: 99;
     position: fixed;
     top: 0;
@@ -18,6 +17,29 @@ export const Container = styled.div`
         width: 80px;
         border-radius: 100%;
     };
+
+    @media screen and (max-width:770px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 0;
+        left: 0;
+        gap: 20px;
+        padding: 5px;
+       
+        ul{
+            gap: 20px;
+        }
+
+        .navigation-link{
+            padding: 7px;
+        }
+
+        img{
+            width: 70px;
+        } 
+    }
+
 `;
 
 export const Menu = styled.ul`
@@ -65,4 +87,6 @@ export const Li = styled.li`
     &:hover::after {
         width: 100%;
     };
+
 `;
+

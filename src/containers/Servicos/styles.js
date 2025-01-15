@@ -11,6 +11,7 @@ export const Background = styled.div`
     background-size: cover;
     padding-top: 620px;
     
+    
     &::before {
     content: '';
     position: absolute;
@@ -68,7 +69,7 @@ export const Background = styled.div`
 `;
 
 export const Section = styled.div`
-    z-index: 99;
+   
     
 
    

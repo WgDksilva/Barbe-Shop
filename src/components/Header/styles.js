@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     z-index: 99;
+    width: 100%;
     position: fixed;
-    top: 0;
-    right: 10px;
     display: flex;
     align-items: center;
     gap: 40px;
@@ -46,6 +45,10 @@ export const Menu = styled.ul`
     display: flex;
     list-style: none;
     gap: 50px;
+    padding-left: 500px;
+    
+    
+   
 `;
 
 export const Li = styled.li`
@@ -53,6 +56,8 @@ export const Li = styled.li`
     cursor: pointer;
     font-size: 15px;
     position: relative;
+    
+    
     
     a {
         text-decoration: none;

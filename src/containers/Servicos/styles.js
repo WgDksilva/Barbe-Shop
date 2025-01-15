@@ -4,10 +4,12 @@ export const Background = styled.div`
     background-image: url( ${(props) => props.img});
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     height: 100vh;
     background-position: center;
     background-size: cover;
+    padding-top: 620px;
     
     &::before {
     content: '';
@@ -30,8 +32,8 @@ export const Background = styled.div`
 
     .services{
         display: flex;
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
         justify-content: center;
         
     }
@@ -67,6 +69,7 @@ export const Background = styled.div`
 
 export const Section = styled.div`
     z-index: 99;
+    
 
    
 
@@ -91,7 +94,7 @@ export const Menu = styled.div`
         overflow: hidden;
 
         img{
-            width: 250px;
+            width: 360px;
             max-width: 354px;
             cursor: pointer;
             transition: transform 0.2s;

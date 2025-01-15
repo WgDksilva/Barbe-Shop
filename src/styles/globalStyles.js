@@ -14,7 +14,13 @@ export default createGlobalStyle`
         background: #000000;
     }
 
-    @media screen and (max-width:770px){
-        
+    svg{
+        width: 100%;
     }
+
+    img{
+        width: 100%;
+    }
+
+   
 `;

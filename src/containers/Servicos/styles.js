@@ -9,8 +9,6 @@ export const Background = styled.div`
     height: 100vh;
     background-position: center;
     background-size: cover;
-    padding-top: 620px;
-    
     
     &::before {
     content: '';
@@ -18,8 +16,8 @@ export const Background = styled.div`
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
-    background-color: rgba(0, 0, 0, 0.1);
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
     };
     &::after {
     content: '';
@@ -27,37 +25,9 @@ export const Background = styled.div`
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 500px;
-    background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0.21));
+    height: 100%;
+    background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0.3));
     }; 
-
-    .services{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        
-    }
-
-    .descricao{
-        h2{ 
-            color: #ffffff;
-            font-size: 38px;
-            text-transform: uppercase;
-            text-align: center;
-            
-        }
-
-        p{
-            font-size: 20px;
-            color: #ffffff;
-            line-height: 150%; 
-            margin-bottom: 30px;
-            text-align: center;
-            max-width: 900px;
-        }
-    }
-
 
     @media screen and (max-width:770px){
         background-position: -690px;
@@ -69,22 +39,53 @@ export const Background = styled.div`
 `;
 
 export const Section = styled.div`
-   
-    
+    z-index: 4;
+    position: relative;
+    top: 320px;
+ 
+    .services-haircuts{
+       align-items: center;
+    };
 
-   
+    .services-tattos{
+        align-items: center;
+    };
 
+    .descricao{
+        h2{ 
+            color: #ffffff;
+            font-size: 38px;
+            text-transform: uppercase;
+            text-align: center;
+        };
+        p{
+            font-size: 20px;
+            color: #ffffff;
+            line-height: 150%; 
+            text-align: center;
+            max-width: 900px;
+            margin-bottom: 20px;
+        };
+    };
+
+    @media screen and (max-width:770px){
+        top: 910px;
+        .descricao{
+            h2 {
+                font-size: 30px;
+            };
+            p{
+                font-size: 15px;
+            };
+        };
+    };
 `;
 
 export const Menu = styled.div`
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 10px;
+    gap: 50px;
     max-width: 900px;
 
-   
     .haircut{
         flex: 1;
         display: flex;
@@ -93,47 +94,109 @@ export const Menu = styled.div`
         border-radius: 20px;
         box-shadow: 0px -1px 17px 5px rgba(255, 255, 255, 0.68);
         overflow: hidden;
+        margin-bottom: 40px;
 
         img{
-            width: 360px;
-            max-width: 354px;
+            width: 300px;
+            height: 300px;
             cursor: pointer;
             transition: transform 0.2s;
-        }
+        };
         img:hover{
             transform: scale(1.2);
             z-index: 1;
-        }
-    }
+        };
+    };
     
     .haircut-info{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 6px;
+        background-color: #ff0000;
+        z-index: 99;
+
+        button{
+            font-size: 15px;
+            color: #fff;
+            background-color: #ff0000;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 0px -1px 1px 3px rgb(255, 255, 255);
+            cursor: pointer;
+            transition: transform 0.2s;
+        };
+        button:hover{
+            transform: scale(1.2);
+            z-index: 1;
+        };
+    };
+
+    .tattos {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0px -1px 17px 5px rgba(255, 255, 255, 0.68);
+        overflow: hidden;
+        margin-bottom: 40px;
+
+        img{
+            width: 300px;
+            height: 400px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        };
+        img:hover{
+            transform: scale(1.2);
+            z-index: 1;
+        };
+        
+    };
+
+    .tatto-info{
         width: 100%;
         display: flex;
         justify-content: center;
         padding: 5px;
         background-color: #ff0000;
         z-index: 99;
-
+        
         button{
             font-size: 15px;
-
             color: #fff;
             background-color: #ff0000;
-            
             padding: 5px;
             border-radius: 10px;
             box-shadow: 0px -1px 1px 3px rgb(255, 255, 255);
             cursor: pointer;
             transition: transform 0.2s;
-        }
+        };
         button:hover{
             transform: scale(1.2);
             z-index: 1;
-        }
-    }
+        };
+    };
 
-    
-     
-   
-
+    @media screen and (max-width:770px){
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        .haircut{
+            img{
+                width: 200px;
+                height: 200px;
+            };
+        };
+        .tattos{
+            margin-bottom: 110px;
+           img{
+                width: 300px;
+                height: 300px;
+            }; 
+        };
+    };
 `;

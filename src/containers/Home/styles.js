@@ -45,7 +45,6 @@ export const Container = styled.div`
     max-width: 1300px;
 `;
 
-
 export const Poster = styled.div`
     z-index: 2;
     display: flex;

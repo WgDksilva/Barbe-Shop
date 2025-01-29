@@ -36,26 +36,28 @@ export const Background = styled.div`
             height: 100%;
         };
     };
+`;
 
+export const Container = styled.div`
+    height: 60%;
+
+    @media screen and (max-width:770px){
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        position: static;
+        margin-top: 50%;
+    };
 `;
 
 export const Section = styled.div`
     z-index: 4;
     position: relative;
-    top: 320px;
- 
-    .services-haircuts{
-       align-items: center;
-    };
-
-    .services-tattos{
-        align-items: center;
-    };
-
     .descricao{
         h2{ 
             color: #ffffff;
-            font-size: 38px;
+            font-size: 25px;
             text-transform: uppercase;
             text-align: center;
         };
@@ -87,7 +89,7 @@ export const Menu = styled.div`
     gap: 50px;
     max-width: 900px;
 
-    .haircut{
+    .product{
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -109,7 +111,7 @@ export const Menu = styled.div`
         };
     };
     
-    .haircut-info{
+    .product-info{
         width: 100%;
         display: flex;
         justify-content: center;
@@ -133,72 +135,13 @@ export const Menu = styled.div`
         };
     };
 
-    .tattos {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        background-color: #ffffff;
-        border-radius: 20px;
-        box-shadow: 0px -1px 17px 5px rgba(255, 255, 255, 0.68);
-        overflow: hidden;
-        margin-bottom: 40px;
-
-        img{
-            width: 300px;
-            height: 400px;
-            cursor: pointer;
-            transition: transform 0.2s;
-        };
-        img:hover{
-            transform: scale(1.2);
-            z-index: 1;
-        };
-        
-    };
-
-    .tatto-info{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        padding: 5px;
-        background-color: #ff0000;
-        z-index: 99;
-        
-        button{
-            font-size: 15px;
-            color: #fff;
-            background-color: #ff0000;
-            padding: 5px;
-            border-radius: 10px;
-            box-shadow: 0px -1px 1px 3px rgb(255, 255, 255);
-            cursor: pointer;
-            transition: transform 0.2s;
-        };
-        button:hover{
-            transform: scale(1.2);
-            z-index: 1;
-        };
-    };
-
     @media screen and (max-width:770px){
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
         gap: 5px;
-        .haircut{
-            img{
-                width: 200px;
-                height: 200px;
-            };
-        };
-        .tattos{
-            margin-bottom: 110px;
-           img{
-                width: 300px;
-                height: 300px;
-            }; 
-        };
+        margin-bottom: 80px;
     };
 `;
 

@@ -19,8 +19,7 @@ export const Container = styled.div`
 
     @media screen and (max-width:770px){
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: end;
         right: 0;
         left: 0;
         gap: 20px;
